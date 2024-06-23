@@ -29,19 +29,6 @@
     width: 50%;
 }
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
 .contacto-abajo{
     width: 100%;
     height: 50%;
@@ -55,4 +42,34 @@
 }
 .btn-form button{
     width: 90%;
+}
+
+
+@media screen and (max-width:712px){
+    footer{
+       
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+}
+@media screen and (max-width:710px){
+   .contacto-col-izq-arriba{
+       
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .grid-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+   .datos-consultorio {
+    width: 100%;
+   }
+   .carousel{
+    width: 100%;
+   }
+
 }
