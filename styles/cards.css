@@ -1,0 +1,115 @@
+.contenedor-grid{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(13rem,1fr));
+    grid-auto-rows: 1fr;
+    gap: 1%;
+    margin: 10px;
+
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 10px;
+
+}
+
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.google{
+    width: 100%;
+    height: auto;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.icono{
+    width: 50px;
+    border-radius: 10px;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:710px){
+    footer{
+       
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+}
+
+
+
+.osde{
+    background-color: #1226aa;
+    color: white;
+    padding: 4px;
+    width:fit-content;
+    height: 30px;
+    border-radius: 10px;
+   
+}
+.ospjn{
+    background-color: rgba(163, 106, 128, 1);
+    color: white;
+    width:fit-content;
+    height: 30px;
+    
+    padding: 4px;
+   border-radius: 10px;
+   font-weight: bold;
+
+}
+
+
+.os span{
+    padding: 0.5rem;
+    
+}
+
+
+
+.modal-body{
+    
+    display: grid;
+    grid-template-rows: 2fr,1fr,1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+
+
+.card-img-top{
+    width: 100px;
+    max-height:300px;
+}
+
+
+

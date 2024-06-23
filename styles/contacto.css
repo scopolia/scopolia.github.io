@@ -1,0 +1,58 @@
+.grid-contacto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.contacto-col-izq{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+.contacto-col-izq-arriba{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.datos-consultorio{
+    width: 50%;
+    height: 100%;
+
+    
+}
+.carousel{
+    width: 50%;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+.contacto-abajo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-form{
+    display: flex;
+    justify-content: center;
+}
+.btn-form button{
+    width: 90%;
+}
