@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Médico-Legal Generado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <div class="container">
+        <div class="informe-header">
+            <button id="btnEditar" class="btn-editar">Editar Informe</button>
+            <button id="btnImprimir" class="btn-imprimir">Imprimir Informe</button>
+            <button id="volverForm" class="btn-blue">Volver</button>
+        </div>
+        
+        <div id="informeContent" contenteditable="true" class="informe-content">
+            <!-- El contenido del informe se insertará aquí mediante JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

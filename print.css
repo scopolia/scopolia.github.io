@@ -1,0 +1,36 @@
+/* Estilos específicos para impresión */
+@media print {
+    body {
+        background-color: white;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .informe-header {
+        display: none !important;
+    }
+
+    .informe-content {
+        border: none;
+        padding: 0;
+    }
+
+    /* Asegurar que el contenido no se corte entre páginas */
+    h1, h2, h3, h4, p, table {
+        page-break-inside: avoid;
+    }
+
+    /* Añadir márgenes para el tamaño legal */
+    @page {
+        size: legal;
+        margin: 2cm;
+    }
+}

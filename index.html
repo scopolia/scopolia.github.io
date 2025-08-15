@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO INFORME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="datos_titulo">DATOS DEL INFORME</h1>
+        <form id="informeForm">
+            <!-- Datos del expediente -->
+            <fieldset>
+                <legend>Datos del Expediente</legend>
+                <div class="form-group">
+                    <label for="caratula">Carátula del Expediente:</label>
+                    <input type="text" id="caratula" name="caratula" required>
+                </div>
+                <div class="form-group">
+                    <label for="expediente">Número de Expediente:</label>
+                    <input type="text" id="expediente" name="expediente" required>
+                </div>
+            </fieldset>
+
+            <!-- Datos personales del peritado -->
+            <fieldset>
+                <legend>Datos Personales del Peritado</legend>
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="estadoCivil">Estado Civil:</label>
+                    <input type="text" id="estadoCivil" name="estadoCivil" required>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacion">Ocupación:</label>
+                    <input type="text" id="ocupacion" name="ocupacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="manoHabil">Mano Hábil:</label>
+                    <select id="manoHabil" name="manoHabil" required>
+                        <option value="Derecha">Derecha</option>
+                        <option value="Izquierda">Izquierda</option>
+                        <option value="Ambidiestro">Ambidiestro</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Fechas importantes -->
+            <fieldset>
+                <legend>Fechas Relevantes</legend>
+                <div class="form-group">
+                    <label for="fechaEvaluacion">Fecha de Evaluación:</label>
+                    <input type="date" id="fechaEvaluacion" name="fechaEvaluacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaAccidente">Fecha del Accidente Denunciado:</label>
+                    <input type="date" id="fechaAccidente" name="fechaAccidente" required>
+                </div>
+            </fieldset>
+
+            <!-- Segmentos corporales -->
+            <fieldset>
+                <legend>Segmentos Corporales a Evaluar</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="segmentos" value="Columna cervical"> Columna cervical</label>
+                    <label><input type="checkbox" name="segmentos" value="Cervicobraquialgia"> Cervicobraquialgia</label>
+                    <label><input type="checkbox" name="segmentos" value="Columna Lumbar"> Columna Lumbar</label>
+                    <label><input type="checkbox" name="segmentos" value="Lumbociatalgia"> Lumbociatalgia</label>
+                    <label><input type="checkbox" name="segmentos" value="Hombro"> Hombro</label>
+                    <label><input type="checkbox" name="segmentos" value="Codo"> Codo</label>
+                    <label><input type="checkbox" name="segmentos" value="Muñeca"> Muñeca</label>
+                    <label><input type="checkbox" name="segmentos" value="Mano"> Mano</label>
+                    <label><input type="checkbox" name="segmentos" value="Cadera"> Cadera</label>
+                    <label><input type="checkbox" name="segmentos" value="Rodilla"> Rodilla</label>
+                    <label><input type="checkbox" name="segmentos" value="Tobillo"> Tobillo</label>
+                </div>
+            </fieldset>
+
+            <!-- Textos libres -->
+            <fieldset>
+                <legend>Contenido del Informe</legend>
+                <div class="form-group">
+                    <label for="anamnesis">Anamnesis y relato de los hechos:</label>
+                    <textarea id="anamnesis" name="anamnesis" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="estudios">Estudios Complementarios Solicitados:</label>
+                    <textarea id="estudios" name="estudios" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="consideraciones">Consideraciones Médico-Legales:</label>
+                    <textarea id="consideraciones" name="consideraciones" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="conclusiones">Conclusiones:</label>
+                    <textarea id="conclusiones" name="conclusiones" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="puntosPericiales">Puntos Periciales Solicitados:</label>
+                    <textarea id="puntosPericiales" name="puntosPericiales" rows="3"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-generar">Generar Informe</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

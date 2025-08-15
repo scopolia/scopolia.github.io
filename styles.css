@@ -1,0 +1,205 @@
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+.datos_titulo{
+    text-align: center;
+    color: #2980b9;
+    text-decoration: underline;
+}
+/* Estilos del formulario */
+fieldset {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+.btn-generar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-generar:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos del informe generado */
+.informe-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-editar, .btn-imprimir {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #e67e22;
+}
+
+.btn-imprimir {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-imprimir:hover {
+    background-color: #27ae60;
+}
+.btn-blue{
+    background-color: #2980b9;
+    color: white;
+}
+
+.informe-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    white-space: pre-line;
+}
+
+/* Estilos para tablas en el informe */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para cuando el contenido es editable */
+[contenteditable="true"] {
+    min-height: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+[contenteditable="true"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.titulo-informe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: #333 double 2px;
+    border-top: #333 double 2px;
+    padding-bottom: 10px;
+    
+    
+    
+}
+.titulo-informe h1,h2,h3,h4{
+    margin: 0;
+
+}
+.provea{
+    text-align: center;
+}
+.sera_jus{
+    text-align:right;
+    margin-right: 30%;
+    
+
+}
